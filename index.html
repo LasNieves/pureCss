@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing Css" />
+    <title>Pure Css</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img class="header__logo" src="img/Logo.png" alt="Logo" />
+      <nav class="header__navbar">
+        <input
+          class="header__menu-toggle"
+          id="header__menu-toggle"
+          type="checkbox"
+        />
+        <label class="header__label" for="header__menu-toggle">
+          <img class="header__img" src="img/menuHamburguesa.svg" alt="bars" />
+          <img class="header__img" src="img/equis.svg" alt="X" />
+        </label>
+        <ul class="header__list">
+          <li class="header__item">Inicio</li>
+          <li class="header__item">Acerca de mí</li>
+          <li class="header__item">Proyectos</li>
+          <li class="header__item">Contáctame</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentacion">
+      <div class="presentacion__container">
+        <h1 class="presentacion__title">
+          Soy <span class="presentacion__title-span">Miguel Ruz</span>. <br />
+          Diseñador UI
+        </h1>
+        <p class="presentacion__content">Este es mi Portafolio web!</p>
+        <div class="presentacion__button-container">
+          <button class="presentacion__button">Ver proyectos</button>
+          <button class="presentacion__button">
+            <img
+              class="presentacion__icon"
+              src="img/download.svg"
+              alt="download"
+            />
+            <span class="presentacion__button-content"> Descargar CV </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="presentacion__container">
+        <div class="presentacion__description-container">
+          <img
+            class="presentacion__description-img"
+            src="img/Foto personal.png"
+            alt=""
+          />
+          <div class="presentacion__description-content-container">
+            <h2 class="presentacion__description-title">Acerca de mi</h2>
+            <p class="presentacion__description-content">
+              Hola! Mi nombre es Miguel y tengo gran afinidad hacía el trabajo
+              colaborativo, me gusta crear diseños que inspiren e involucren a
+              las personas. Como diseñador UI, considero que un buen producto no
+              solo brinda una solución sino que permite crear una experiencia
+              emocional en las personas que lo usan. En mi proceso creativo
+              utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator
+              que me ayudan mucho en el flujo de trabajo para la producción de
+              interfaces de usuario.
+            </p>
+            <button class="presentacion__button">
+              <span class="presentacion__button-content">
+                Mas acerca de mi
+              </span>
+              <img
+                class="presentacion__button-icon"
+                src="img/arrow-right.svg"
+                alt="more"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <h2 class="main__title">Proyectos</h2>
+      <div class="main__container">
+        <div class="main__card">
+          <picture>
+            <source
+              srcset="img/conTituloDesktop.png"
+              media="(min-width: 720px)"
+            />
+            <img src="img/pequeña.png" alt="imgMobile" />
+          </picture>
+        </div>
+        <div class="main__card">
+          <picture>
+            <source
+              srcset="img/conTituloDesktop.png"
+              media="(min-width: 720px)"
+            />
+            <img src="img/pequeña.png" alt="imgMobile" />
+          </picture>
+        </div>
+        <div class="main__card">
+          <picture>
+            <source
+              srcset="img/conTituloDesktop.png"
+              media="(min-width: 720px)"
+            />
+            <img src="img/pequeña.png" alt="imgMobile" />
+          </picture>
+        </div>
+        <div class="main__card">
+          <picture>
+            <source
+              srcset="img/conTituloDesktop.png"
+              media="(min-width: 720px)"
+            />
+            <img src="img/pequeña.png" alt="imgMobile" />
+          </picture>
+        </div>
+      </div>
+
+      <div class="main__button-container">
+        <button class="main__button">
+          <a class="main__button-link" href="https://www.behance.net/"
+            >Ver más en Behance
+          </a>
+          <img class="main__button-icon" src="img/arrow-right.svg" alt="more" />
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__logo" src="img/Logo.png" alt="Logo" />
+      <p class="footer__link">Inicio</p>
+      <p class="footer__link">Acerca de mi</p>
+      <p class="footer__link">Proyectos</p>
+      <p class="footer__link">Contáctame</p>
+      <p class="footer__link">Correo</p>
+      <p class="footer__link">LinkedIn</p>
+      <p class="footer__link">Social</p>
+      <div class="footer__icon-container">
+        <img class="footer__img" src="img/Behance.svg" alt="Behance" />
+        <img class="footer__img" src="img/Linkendl.svg" alt="Linkedin" />
+        <img class="footer__img" src="img/Figma.svg" alt="Figma" />
+      </div>
+    </footer>
+
+    <h4>© 2022 ElPlan</h4>
+  </body>
+</html>

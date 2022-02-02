@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Color Palette */
+:root {
+  --primary: #5c62ec;
+  --hover: #3c40ae;
+  --acento: #85bfd1;
+  --gray: #a0a0a1;
+  --white: #ffffff;
+  --fill: #1c1e22;
+  --border: #26292d;
+  --background: #171718;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--background);
+  color: var(--white);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 140px;
+  height: 58px;
+}
+
+.header__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 40px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.header__img--visible {
+  display: none;
+}
+
+.header__menu-toggle {
+  display: none;
+}
+
+.header__list {
+  display: none;
+  padding: 20px;
+  margin: 10px auto;
+  width: 150px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.header__item {
+  display: block;
+  padding: 10px 0;
+  color: #fafafa;
+  list-style: none;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.presentacion__container:nth-child(1) {
+  margin-top: 80px;
+  margin-bottom: 130px;
+}
+
+.presentacion__container:nth-child(2) {
+  margin-bottom: 70px;
+}
+
+.presentacion__title {
+  text-align: center;
+  line-height: 40px;
+  word-spacing: 5px;
+}
+
+.presentacion__title-span {
+  color: var(--primary);
+}
+
+.presentacion__content {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.presentacion__button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.presentacion__button {
+  width: 80%;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+.presentacion__button:nth-child(1) {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+}
+
+.presentacion__button:nth-child(1):hover {
+  background-color: var(--hover);
+}
+
+.presentacion__button:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.presentacion__button:nth-child(2):hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.presentacion__icon {
+  width: 14px;
+  height: 16px;
+  vertical-align: bottom;
+}
