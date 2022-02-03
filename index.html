@@ -17,16 +17,21 @@
     <header class="header">
       <img class="header__logo" src="img/Logo.png" alt="Logo" />
       <nav class="header__navbar">
-        <input
-          class="header__menu-toggle"
-          id="header__menu-toggle"
-          type="checkbox"
-        />
-        <label class="header__label" for="header__menu-toggle">
-          <img class="header__img" src="img/menuHamburguesa.svg" alt="bars" />
-          <img class="header__img" src="img/equis.svg" alt="X" />
-        </label>
-        <ul class="header__list">
+        <div class="header__img-container" id="headerImgContainer">
+          <img
+            class="header__img"
+            id="bars"
+            src="img/menuHamburguesa.svg"
+            alt="bars"
+          />
+          <img
+            class="header__img invisible"
+            id="cancel"
+            src="img/equis.svg"
+            alt="X"
+          />
+        </div>
+        <ul class="header__list header__list--top" id="toggleMenu">
           <li class="header__item">Inicio</li>
           <li class="header__item">Acerca de mí</li>
           <li class="header__item">Proyectos</li>
@@ -156,5 +161,6 @@
     </footer>
 
     <h4>© 2022 ElPlan</h4>
+    <script src="main.js"></script>
   </body>
 </html>

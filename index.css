@@ -24,7 +24,13 @@ body {
   color: var(--white);
 }
 
-header {
+/* Clases Utilitarias */
+
+.invisible {
+  display: none;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,20 +42,10 @@ header {
   height: 58px;
 }
 
-.header__img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 40px;
-  height: 36px;
-  padding: 10px;
-  border-radius: 7px;
+.header__img-container {
+  margin-right: 10px;
+  text-align: center;
   cursor: pointer;
-}
-
-.header__img--visible {
-  display: none;
 }
 
 .header__menu-toggle {
@@ -57,12 +53,24 @@ header {
 }
 
 .header__list {
-  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100vw;
+  height: calc(100vh - 60px);
   padding: 20px;
   margin: 10px auto;
-  width: 150px;
+  background-color: var(--background);
   border-radius: 7px;
-  text-align: center;
+  transition: top 1s;
+}
+
+.header__list--top {
+  top: -950px;
 }
 
 .header__item {
@@ -188,6 +196,14 @@ header {
 .main {
   width: 90%;
   margin: 0 auto;
+}
+
+.main__card {
+  margin-bottom: 20px;
+}
+
+.main__card:nth-last-child() {
+  margin-bottom: 0;
 }
 
 .main__img {
