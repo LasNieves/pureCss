@@ -28,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--border);
 }
 
 .header__logo {
@@ -80,17 +81,20 @@ header {
 
 .presentacion__container:nth-child(1) {
   margin-top: 80px;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 }
 
 .presentacion__container:nth-child(2) {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .presentacion__title {
   text-align: center;
   line-height: 40px;
-  word-spacing: 5px;
+  letter-spacing: 0.25px;
+  font-size: 40px;
+  font-weight: medium;
+  -webkit-text-stroke: 1px black;
 }
 
 .presentacion__title-span {
@@ -100,6 +104,9 @@ header {
 .presentacion__content {
   margin-bottom: 40px;
   text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  line-height: 20px;
 }
 
 .presentacion__button-container {
@@ -139,4 +146,96 @@ header {
   width: 14px;
   height: 16px;
   vertical-align: bottom;
+}
+
+.presentacion__description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 10px auto;
+  padding: 16px;
+  background-color: var(--fill);
+  border-radius: 5px;
+}
+
+.presentacion__description-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentacion__description-content {
+  line-height: 28px;
+  letter-spacing: 0.44px;
+}
+
+.presentacion__button-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 65%;
+  padding: 13px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  padding: 20px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 10px;
+}
+
+.main__button img {
+  margin-left: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.footer__link--color {
+  color: var(--acento);
+}
+
+.footer__link,
+.footer__img {
+  cursor: pointer;
+}
+
+h4 {
+  text-align: center;
 }
