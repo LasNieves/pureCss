@@ -32,15 +32,23 @@
           />
         </div>
         <ul class="header__list header__list--top" id="toggleMenu">
-          <li class="header__item">Inicio</li>
-          <li class="header__item">Acerca de mí</li>
-          <li class="header__item">Proyectos</li>
-          <li class="header__item">Contáctame</li>
+          <li class="header__item">
+            <a class="header__link" href="#inicio">Inicio</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#acercaDeMi">Acerca de mí</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#contacto">Contáctame</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section class="presentacion">
+    <section class="presentacion" id="inicio">
       <div class="presentacion__container">
         <h1 class="presentacion__title">
           Soy <span class="presentacion__title-span">Miguel Ruz</span>. <br />
@@ -60,7 +68,7 @@
         </div>
       </div>
 
-      <div class="presentacion__container">
+      <div class="presentacion__container" id="acercaDeMi">
         <div class="presentacion__description-container">
           <img
             class="presentacion__description-img"
@@ -95,7 +103,7 @@
       </div>
     </section>
 
-    <main class="main">
+    <main class="main" id="proyectos">
       <h2 class="main__title">Proyectos</h2>
       <div class="main__container">
         <div class="main__card">
@@ -144,8 +152,10 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <img class="footer__logo" src="img/Logo.png" alt="Logo" />
+    <footer class="footer" id="contacto">
+      <div class="footer__logo-container">
+        <img class="footer__logo" src="img/Logo.png" alt="Logo" />
+      </div>
       <p class="footer__link footer__link--color">Inicio</p>
       <p class="footer__link">Acerca de mi</p>
       <p class="footer__link">Proyectos</p>
@@ -160,7 +170,10 @@
       </div>
     </footer>
 
-    <h4>© 2022 ElPlan</h4>
+    <div class="autor-container">
+      <h4 class="autor">© 2022 ElPlan</h4>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
