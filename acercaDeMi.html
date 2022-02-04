@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing Css" />
+    <title>Acerca de mi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="./index.html">
+        <img class="header__logo" src="img/Logo.png" alt="Logo" />
+      </a>
+      <nav class="header__navbar">
+        <div class="header__img-container" id="headerImgContainer">
+          <img
+            class="header__img"
+            id="bars"
+            src="img/menuHamburguesa.svg"
+            alt="bars"
+          />
+          <img
+            class="header__img invisible"
+            id="cancel"
+            src="img/equis.svg"
+            alt="X"
+          />
+        </div>
+        <ul class="header__list header__list--top" id="toggleMenu">
+          <li class="header__item">
+            <a class="header__link" href="./index.html">Inicio</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#section">Acerca de mí</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#contacto">Contáctame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section__container" id="section">
+      <img
+        class="section__img"
+        src="./img/Foto personal.png"
+        alt="profile-photo"
+      />
+      <div class="section__content-container">
+        <h1 class="section__title">Miguel Ruz</h1>
+        <p class="section__description">
+          Soy Diseñador UI, actualmente vivo en Turbaco-Bolivar, un pueblo a las
+          afueras de Cartagena (Colombia).
+        </p>
+        <br />
+        <div class="description__description-container">
+          <p class="section__description">
+            Me agrada la idea de trabajar en equipo, pienso que es una manera de
+            conectar con nuevas habilidades y de brindar mi conocimiento al
+            equipo con el fin de mejorar la productividad en el desarrollo de
+            algun producto digital. Me gusta descubrir cosas nuevas a diario y
+            ser un activo valioso en cualquier equipo en el que me desarrolle,
+            por lo que estoy aprendiendo constantemente e investigando acerca de
+            las nuevas tendencias.
+          </p>
+          <p class="section__description">
+            Trato de buscar todo el Feedback posible en los proyectos, con el
+            fin de mejorar y poder hacer diseños que no solo sean atractivos
+            esteticamente sino que sean accesibles y funcionales por lo que me
+            gusta trabajar muy de la mano con los stakeholders. Hablemos!
+          </p>
+        </div>
+        <a class="section__link" id="proyectos" href="#"
+          >miguelruz1126@gmail.com</a
+        >
+      </div>
+    </section>
+
+    <main class="main__cards">
+      <h2 class="main__title">Mis habilidades</h2>
+      <div class="card-grid__container">
+        <div class="card__container">
+          <div class="card__content-container">
+            <img class="card__img" src="./img/phone.svg" alt="" />
+            <h3 class="card__title">Responsive design</h3>
+            <p class="card__description">
+              Con mi experiencia en patrones de diseño responsive tengo una
+              visión clara acerca de como implementarlos de manera efectiva en
+              cualquier proyecto
+            </p>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="card__content-container">
+            <img class="card__img" src="./img/codeSnippet.svg" alt="" />
+            <h3 class="card__title">HTML y CSS</h3>
+            <p class="card__description">
+              Tengo conocimientos basicos y bien fundamentados de html y css, lo
+              que me permite tener un panorama mas claro a la hora de tomar mis
+              decisiones de diseño
+            </p>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="card__content-container">
+            <img class="card__img" src="./img/Cooworking.svg" alt="" />
+            <h3 class="card__title">Cooworking</h3>
+            <p class="card__description">
+              Trato de ser un activo valioso en el equipo que esté trabajando,
+              aportando mis conocimientos y material que optimice el flujo de
+              trabajo en el desarrollo del proyecto
+            </p>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="card__content-container">
+            <img class="card__img" src="./img/comunication.svg" alt="" />
+            <h3 class="card__title">Comunicación</h3>
+            <p class="card__description">
+              Puedo mantener comunicación con el equipo de desarrollo, atento a
+              cualquier inquietud que se presente con el fin de llevar el
+              proyecto de manera correcta
+            </p>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="card__content-container">
+            <img class="card__img" src="./img/desingsystem.svg" alt="" />
+            <h3 class="card__title">Sistema de diseño</h3>
+            <p class="card__description">
+              Tengo manejo de sistemas de diseño, lo cual permite agilidad en el
+              proceso de diseño acortando los tiempos en la creación de las
+              interfaces dentro del proyecto
+            </p>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="card__content-container">
+            <img class="card__img" src="./img/iteration.svg" alt="" />
+            <h3 class="card__title">Iteración</h3>
+            <p class="card__description">
+              Soy capaz de iterar recibiendo e interpretando el feedback que me
+              sea proporcionado con el fin de mejorar la calidad del producto
+              que esté diseñando
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <div class="footer__logo-container">
+        <img class="footer__logo" src="img/Logo.png" alt="Logo" />
+      </div>
+      <p class="footer__link footer__link--color">Inicio</p>
+      <p class="footer__link">Acerca de mi</p>
+      <p class="footer__link">Proyectos</p>
+      <p class="footer__link footer__link--color">Contáctame</p>
+      <p class="footer__link">Correo</p>
+      <p class="footer__link">LinkedIn</p>
+      <p class="footer__link footer__link--color">Social</p>
+      <div class="footer__icon-container">
+        <img class="footer__img" src="img/Behance.svg" alt="Behance" />
+        <img class="footer__img" src="img/Linkendl.svg" alt="Linkedin" />
+        <img class="footer__img" src="img/Figma.svg" alt="Figma" />
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

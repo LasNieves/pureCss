@@ -44,6 +44,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -276,8 +278,94 @@ html {
   cursor: pointer;
 }
 
+.footer__link:hover {
+  color: #ccc;
+  transition: color 0.3s ease-out;
+}
+
+.footer__link--color:hover {
+  color: var(--acento);
+}
+
 .autor {
   text-align: center;
+}
+
+/* Estilos Acerca De Mi */
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 144px;
+}
+
+.section__link {
+  text-decoration: none;
+  color: var(--acento);
+}
+.main__cards {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.main__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card-grid__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.card__container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--fill);
+}
+
+.card__content-container {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.card__img {
+  width: 40px;
+  height: 40px;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.card__description {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 650px) {
+  .card-grid__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__container {
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -290,7 +378,7 @@ html {
   }
 
   .header__navbar {
-    width: 35%;
+    width: 40%;
     margin: 0;
   }
 
@@ -399,6 +487,24 @@ html {
 
   .autor {
     text-align: left;
+  }
+
+  .section__container {
+    padding-top: calc(80px + 70px);
+  }
+
+  .card-grid__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main__title {
+    margin-bottom: 64px;
+  }
+
+  .main__cards {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 128px;
   }
 }
 
